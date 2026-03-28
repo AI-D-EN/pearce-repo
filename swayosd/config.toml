@@ -1,0 +1,13 @@
+#[server]
+#show_percentage = true
+#max_volume = 150
+#min_brightness = 5
+#keyboard_backlight = true
+
+[server]
+show_percentage = true
+max_volume = 150
+min_brightness = 5
+keyboard_backlight = true
+
+
