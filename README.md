@@ -31,8 +31,15 @@ This setup reflects my interest in systems programming, embedded environments, a
 
 ## Folder Structure
 hypr/ → Hyprland configuration
-waybar/ → Waybar modules and styling
+
 kitty/ → Terminal configuration
+
+rofi/ → rofi configuration
+
+swayosd/ → swayosd configuration
+
+waybar/ → Waybar modules and styling
+
 fastfetch/ → System identity customization
 
 
