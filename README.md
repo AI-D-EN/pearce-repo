@@ -4,7 +4,16 @@ A clean and highly customizable Arch Linux + Hyprland setup featuring Material Y
 
 ## Showcase
 
-🎥 Desktop showcase video coming soon.
+🎥 Desktop showcase video.
+
+
+https://github.com/user-attachments/assets/e143cadb-b5ee-4370-9e81-f0bdf5d6c730
+
+
+
+
+
+
 
 ## Features
 
