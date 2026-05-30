@@ -1,0 +1,28 @@
+@import "colors.css";
+
+window {
+    background: rgba(16, 19, 26, 0.92);
+    border-radius: 18px;
+    border: 2px solid @primary;
+}
+
+progressbar {
+    min-height: 10px;
+    border-radius: 999px;
+    background: @bg3;
+}
+
+progress {
+    background: @primary;
+    border-radius: 999px;
+}
+
+image {
+    color: @fg;
+}
+
+label {
+    color: @fg;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+}

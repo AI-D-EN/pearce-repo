@@ -1,0 +1,140 @@
+* {
+    font-family: "JetBrainsMono Nerd Font Mono";
+    box-shadow: none;
+    transition: 0.2s ease;
+}
+
+/* BACKGROUND */
+
+window {
+    background-color: rgba(20, 20, 20, 0.75);
+}
+
+/* BUTTONS */
+
+button {
+    color: #dde3ee;
+
+    background-color: alpha(#0e141c, 0.88);
+
+    border: 2px solid #414750;
+    border-radius: 28px;
+
+    margin: 18px;
+
+    min-width: 180px;
+    min-height: 180px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* HOVER */
+
+button:hover {
+    background-color: #a1c9ff;
+    border-color: #bbc6ea;
+    color: #00325a;
+}
+
+/* SELECTED */
+
+button:focus {
+    background-color: #bbc6ea;
+    border-color: #c2c1f9;
+    color: #252f4d;
+}
+
+/* ICON BASE */
+
+#lock,
+#logout,
+#suspend,
+#hibernate,
+#shutdown,
+#reboot {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+}
+
+/* ICONS */
+
+
+
+
+/* LOCK */
+
+#lock {
+    background-image: image(url("/home/aiden/.config/wlogout/icons/lock.png"));
+}
+
+#lock:hover {
+    background-color: #a1c9ff;
+    background-size: 35%;
+    background-image: image(url("/home/aiden/.config/wlogout/icons/lock-hover.png"));
+}
+
+/* LOGOUT */
+
+#logout {
+    background-image: image(url("/home/aiden/.config/wlogout/icons/logout.png"));
+}
+
+#logout:hover {
+    background-color: #a1c9ff;
+    background-size: 35%;
+    background-image: image(url("/home/aiden/.config/wlogout/icons/logout-hover.png"));
+}
+
+/* HIBERNATE */
+
+#hibernate {
+    background-image: image(url("/home/aiden/.config/wlogout/icons/hibernate.png"));
+}
+
+#hibernate:hover {
+    background-color: #a1c9ff;
+    background-size: 35%;
+    background-image: image(url("/home/aiden/.config/wlogout/icons/hibernate-hover.png"));
+}
+
+/* SHUTDOWN */
+
+#shutdown {
+    background-image: image(url("/home/aiden/.config/wlogout/icons/power.png"));
+}
+
+#shutdown:hover {
+    background-color: #a1c9ff;
+    background-size: 35%;
+    background-image: image(url("/home/aiden/.config/wlogout/icons/power-hover.png"));
+}
+
+/* REBOOT */
+
+#reboot {
+    background-image: image(url("/home/aiden/.config/wlogout/icons/restart.png"));
+}
+
+#reboot:hover {
+    background-color: #a1c9ff;
+    background-size: 35%;
+    background-image: image(url("/home/aiden/.config/wlogout/icons/restart-hover.png"));
+}
+
+/* SUSPEND */
+
+#suspend {
+    background-image: image(url("/home/aiden/.config/wlogout/icons/sleep.png"));
+}
+
+#suspend:hover {
+    background-color: #a1c9ff;
+    background-size: 35%;
+    background-image: image(url("/home/aiden/.config/wlogout/icons/sleep-hover.png"));
+}
+
+
+
+

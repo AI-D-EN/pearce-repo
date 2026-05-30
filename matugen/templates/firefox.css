@@ -1,0 +1,315 @@
+:root {
+  --bg: {{colors.background.default.hex}};
+  --surface: {{colors.surface_container.default.hex}};
+  --surface2: {{colors.surface.default.hex}};
+  --primary: {{colors.primary.default.hex}};
+  --text: {{colors.on_background.default.hex}};
+  --on-primary: {{colors.on_primary.default.hex}};
+  --outline: {{colors.outline.default.hex}};
+
+  --toolbar-bgcolor: var(--surface) !important;
+
+  --toolbar-field-background-color: var(--surface2) !important;
+  --toolbar-field-focus-background-color: var(--surface2) !important;
+  --toolbar-field-color: var(--text) !important;
+  --toolbar-field-focus-color: var(--text) !important;
+
+  --arrowpanel-background: var(--surface) !important;
+  --arrowpanel-color: var(--text) !important;
+}
+
+/* Main Window */
+
+#main-window,
+#browser,
+browser,
+#appcontent {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+/* Top Bar */
+
+#navigator-toolbox,
+#nav-bar,
+#titlebar,
+#PersonalToolbar {
+  background: var(--surface) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* URL Bar */
+
+#urlbar,
+#searchbar {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+#urlbar-background {
+  background: var(--surface2) !important;
+  border: 1px solid var(--outline) !important;
+  border-radius: 16px !important;
+}
+
+#urlbar[focused] #urlbar-background,
+#urlbar[open] #urlbar-background {
+  border-color: var(--primary) !important;
+}
+
+#urlbar-input {
+  color: var(--text) !important;
+}
+
+#urlbar-input::placeholder {
+  color: var(--text) !important;
+  opacity: .7 !important;
+}
+
+/* URL Dropdown */
+
+#urlbarView,
+.urlbarView,
+.urlbarView-body-outer,
+.urlbarView-body-inner {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+}
+
+.urlbarView-row[selected] {
+  background: color-mix(in srgb, var(--primary) 20%, transparent) !important;
+}
+
+/* Toolbar Icons */
+
+toolbarbutton,
+.toolbarbutton-icon,
+.urlbar-icon,
+#downloads-button,
+#PanelUI-menu-button {
+  color: var(--text) !important;
+  fill: var(--text) !important;
+  stroke: var(--text) !important;
+}
+
+toolbarbutton:hover {
+  background: color-mix(in srgb, var(--primary) 15%, transparent) !important;
+  border-radius: 10px !important;
+}
+
+/* =========================
+   VERTICAL TABS
+   ========================= */
+
+#sidebar-box,
+#sidebar-main,
+#sidebar {
+  background: var(--surface) !important;
+  border-right: 1px solid var(--outline) !important;
+}
+
+.sidebar-panel {
+  background: var(--surface) !important;
+}
+
+/* Force readable text */
+
+.tabbrowser-tab,
+.tabbrowser-tab:not([selected]) {
+  opacity: 1 !important;
+}
+
+.tabbrowser-tab .tab-label {
+  color: var(--text) !important;
+  opacity: 1 !important;
+  font-weight: 500 !important;
+}
+
+/* Icons */
+
+.tabbrowser-tab .tab-icon-image {
+  opacity: 1 !important;
+}
+
+/* Selected Tab */
+
+.tabbrowser-tab[selected] .tab-background {
+  background: color-mix(
+    in srgb,
+    var(--primary) 20%,
+    transparent
+  ) !important;
+
+  border: 1px solid var(--primary) !important;
+  border-radius: 12px !important;
+}
+
+.tabbrowser-tab[selected] .tab-label {
+  color: var(--text) !important;
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+
+/* Hover */
+
+.tabbrowser-tab:hover .tab-background {
+  background: color-mix(
+    in srgb,
+    var(--primary) 12%,
+    transparent
+  ) !important;
+
+  border-radius: 12px !important;
+}
+
+/* New Tab Button */
+
+#tabs-newtab-button,
+#vertical-tabs-newtab-button {
+  color: var(--text) !important;
+}
+
+/* Menus */
+
+menupopup,
+panel,
+.PanelUI-subView,
+.panel-viewcontainer {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+}
+
+menuitem:hover,
+menuitem[_moz-menuactive="true"] {
+  background: color-mix(in srgb, var(--primary) 20%, transparent) !important;
+}
+
+/* Downloads Popup */
+
+#downloadsPanel,
+#downloadsListBox,
+#downloadsFooter {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+}
+
+/* Zoom Bubble */
+
+#urlbar-zoom-button {
+  background: var(--surface2) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--outline) !important;
+}
+
+/* Tooltips */
+
+tooltip {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--outline) !important;
+}
+/* Selected tab close button */
+
+.tabbrowser-tab[selected] .tab-close-button {
+    color: var(--text) !important;
+    fill: var(--text) !important;
+    opacity: 1 !important;
+}
+
+/* Hover */
+
+.tabbrowser-tab[selected] .tab-close-button:hover {
+    background: color-mix(
+        in srgb,
+        var(--primary) 30%,
+        white 10%
+    ) !important;
+
+    color: var(--text) !important;
+    border-radius: 6px !important;
+}
+
+/* All close buttons */
+
+.tab-close-button {
+    opacity: 0.8 !important;
+    color: var(--text) !important;
+    fill: var(--text) !important;
+}
+/* =========================
+   DOWNLOADS PANEL
+   ========================= */
+
+#downloadsPanel,
+#downloadsPanel panelview,
+#downloadsPanel-mainView,
+#downloadsListBox,
+#downloadsFooter,
+#downloadsFooterButtons,
+#downloadsHistory {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    border-color: var(--outline) !important;
+}
+
+#downloadsListBox richlistitem {
+    background: transparent !important;
+    color: var(--text) !important;
+}
+
+#downloadsListBox richlistitem:hover {
+    background: color-mix(
+        in srgb,
+        var(--primary) 12%,
+        transparent
+    ) !important;
+}
+
+#downloadsListBox richlistitem[selected="true"] {
+    background: color-mix(
+        in srgb,
+        var(--primary) 20%,
+        transparent
+    ) !important;
+}
+
+.downloadTarget,
+.downloadDetails,
+.downloadButton {
+    color: var(--text) !important;
+}
+
+#downloadsFooterButtons button,
+#downloadsHistory {
+    background: var(--surface2) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--outline) !important;
+    border-radius: 10px !important;
+}
+
+#downloadsFooterButtons button:hover,
+#downloadsHistory:hover {
+    background: color-mix(
+        in srgb,
+        var(--primary) 15%,
+        transparent
+    ) !important;
+}
+
+/* Search boxes */
+
+search-textbox,
+.textbox-input-box,
+#searchFilter {
+    background: var(--surface2) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--outline) !important;
+}
+
+/* Download icons */
+
+.downloadIconShow,
+.downloadTypeIcon {
+    fill: var(--text) !important;
+}

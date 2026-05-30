@@ -1,0 +1,183 @@
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 0px;
+
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* =========================
+   Tooltips
+========================= */
+
+tooltip {
+    background: alpha(@bg0, 0.96);
+
+    border-radius: 14px;
+    border: 1px solid alpha(@fg, 0.14);
+}
+
+tooltip label {
+    color: @fg;
+    padding: 6px;
+}
+
+/* =========================
+   Workspace Container
+========================= */
+
+#workspaces {
+    background: alpha(@bg0, 0.72);
+
+    margin: 6px 8px 6px 12px;
+    padding: 4px;
+
+    border-radius: 999px;
+
+    border: 1px solid alpha(@fg, 0.12);
+}
+
+/* =========================
+   Workspace Buttons
+========================= */
+
+#workspaces button {
+    min-width: 22px;
+
+    margin: 0 4px;
+    padding: 0 4px;
+
+    border-radius: 999px;
+
+    background: alpha(@bg1, 0.45);
+    color: transparent;
+
+    border: 1px solid alpha(@fg, 0.08);
+
+    transition: all 0.25s ease-in-out;
+}
+
+#workspaces button:hover {
+    min-width: 42px;
+
+    background: alpha(@secondary, 0.85);
+    color: @bg0;
+}
+
+#workspaces button.active {
+    min-width: 52px;
+
+    background: @primary;
+    color: @bg0;
+
+    border: 1px solid alpha(@fg, 0.15);
+
+    box-shadow: inset 0 0 0 1px alpha(@fg, 0.05);
+}
+
+#workspaces button.urgent {
+    background: @error;
+    color: @bg0;
+}
+
+/* =========================
+   Shared Modules
+========================= */
+
+#battery,
+#pulseaudio,
+#network,
+#clock,
+#bluetooth,
+#custom-notification,
+#custom-kdeconnect,
+#custom-clipboard,
+#window {
+    background: alpha(@bg0, 0.72);
+
+    margin: 6px 8px 6px 0;
+    padding: 0 16px;
+
+    border-radius: 999px;
+
+    border: 1px solid alpha(@fg, 0.12);
+
+    transition: all 0.25s ease-in-out;
+}
+
+/* =========================
+   Hover Effects
+========================= */
+
+#battery:hover,
+#pulseaudio:hover,
+#network:hover,
+#clock:hover,
+#bluetooth:hover,
+#custom-notification:hover,
+#custom-kdeconnect:hover,
+#custom-clipboard:hover,
+#window:hover {
+    background: alpha(@bg1, 0.85);
+}
+
+/* =========================
+   Dynamic Accent Coloring
+========================= */
+
+#clock {
+    color: @primary;
+}
+
+#pulseaudio {
+    color: @secondary;
+}
+
+#network {
+    color: @tertiary;
+}
+
+#battery {
+    color: @primary;
+}
+
+#bluetooth {
+    color: @secondary;
+}
+
+#custom-clipboard {
+    color: @tertiary;
+}
+
+#window {
+    color: @primary;
+    margin-right: 14px;
+}
+
+#custom-kdeconnect,
+#custom-notification {
+    color: @fg;
+}
+
+/* =========================
+   Edge Spacing
+========================= */
+
+.modules-left {
+    margin-left: 8px;
+}
+
+.modules-right {
+    margin-right: 8px;
+}

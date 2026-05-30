@@ -1,0 +1,124 @@
+@import "colors.rasi"
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font Mono 12";
+}
+
+* {
+    fg: #ECEFF4;
+
+    background-color: transparent;
+    text-color: #ECEFF4;
+
+    normal-background: transparent;
+    normal-foreground: #ECEFF4;
+
+    selected-normal-background: @primary;
+    selected-normal-foreground: #2e3440;
+}
+
+window {
+    width: 28%;
+
+    location: center;
+    anchor: center;
+
+    transparency: "real";
+
+    background-color: transparent;
+
+    border: 1px;
+    border-color: @primary;
+
+    border-radius: 20px;
+}
+
+mainbox {
+    children: [inputbar, listview];
+
+    spacing: 12px;
+    padding: 18px;
+
+    background-color: #10131acc;
+
+    border-radius: 20px;
+}
+
+inputbar {
+    background-color: #1d2230dd;
+
+    border-radius: 14px;
+
+    padding: 14px;
+}
+
+prompt {
+    enabled: false;
+}
+
+entry {
+    placeholder: "Search...";
+
+    text-color: #ECEFF4;
+    placeholder-color: #AAAAAA;
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+
+    spacing: 8px;
+    scrollbar: false;
+
+    background-color: transparent;
+}
+
+element {
+    padding: 10px;
+
+    spacing: 8px;
+
+    border-radius: 14px;
+
+    background-color: #16181fcc;
+
+    text-color: #ECEFF4;
+}
+
+element normal.normal {
+    background-color: #16181fcc;
+    text-color: #ECEFF4;
+}
+
+element alternate.normal {
+    background-color: #16181fcc;
+    text-color: #ECEFF4;
+}
+
+element selected.normal {
+    background-color: @primary;
+    text-color: #2e3440;
+}
+
+element selected.normal element-icon {
+    background-color: transparent;
+    text-color: #2e3440;
+}
+
+element-icon {
+    size: 24px;
+
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+textbox {
+    text-color: #ECEFF4;
+}

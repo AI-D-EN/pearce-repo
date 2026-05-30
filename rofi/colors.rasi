@@ -1,0 +1,12 @@
+* {
+    bg0: #0e141c;
+    bg1: #0e141c;
+
+    fg: #dde3ee;
+
+    primary: #a1c9ff;
+    secondary: #bbc6ea;
+    tertiary: #c2c1f9;
+
+    error: #ffb4ab;
+}

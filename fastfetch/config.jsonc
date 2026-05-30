@@ -1,0 +1,48 @@
+{
+  "logo": {
+    "source": "arch_small",
+    "padding": {
+      "right": 2
+    }
+  },
+
+  "display": {
+    "separator": " "
+  },
+
+  "modules": [
+    "title",
+
+    {
+      "type": "os",
+      "key": "󰣇"
+    },
+    {
+      "type": "kernel",
+      "key": "󰒋"
+    },
+    {
+      "type": "wm",
+      "key": ""
+    },
+    {
+      "type": "terminal",
+      "key": ""
+    },
+    {
+      "type": "cpu",
+      "key": "󰻠"
+    },
+    {
+      "type": "memory",
+      "key": "󰑭"
+    },
+
+    "break",
+
+    {
+      "type": "colors",
+      "symbol": ""
+    }
+  ]
+}

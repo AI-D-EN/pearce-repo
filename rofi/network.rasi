@@ -1,0 +1,145 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font Mono 10.5";
+}
+
+/***** ----- Global ----- *****/
+
+* {
+    bg: #2E3440E6;
+    bg-alt: #3B4252E6;
+
+    fg: #D8DEE9;
+    fg-alt: #E5E9F0;
+
+    selected: #81A1C1CC;
+    active: #88C0D0CC;
+    urgent: #BF616ACC;
+
+    border-col: #81A1C1CC;
+
+    background-color: transparent;
+    text-color: @fg;
+}
+
+/***** ----- Window ----- *****/
+
+window {
+    width: 22%;
+
+    location: northeast;
+    anchor: northeast;
+
+    x-offset: -18px;
+    y-offset: 18px;
+
+    background-color: @bg;
+
+    border: 2px;
+    border-color: @border-col;
+
+    border-radius: 14px;
+}
+
+/***** ----- Main Box ----- *****/
+
+mainbox {
+    children: [inputbar, listview];
+
+    spacing: 6px;
+    padding: 8px;
+}
+
+/***** ----- Input Bar ----- *****/
+
+inputbar {
+    background-color: @bg-alt;
+
+    border-radius: 10px;
+
+    padding: 8px 10px;
+}
+
+prompt {
+    enabled: false;
+}
+
+entry {
+    placeholder: "Networks...";
+    text-color: @fg-alt;
+}
+
+/***** ----- List View ----- *****/
+
+listview {
+    lines: 6;
+    columns: 1;
+
+    spacing: 3px;
+    scrollbar: false;
+}
+
+/***** ----- Elements ----- *****/
+
+element {
+    background-color: transparent;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: #3B4252CC;
+
+    text-color: #D8DEE9;
+
+    border-radius: 10px;
+
+    padding: 6px 10px;
+}
+
+element selected.normal,
+element selected.active {
+    background-color: #81A1C1CC;
+
+    text-color: #ECEFF4;
+
+    border-radius: 10px;
+
+    padding: 6px 10px;
+}
+
+element selected.urgent {
+    background-color: #BF616ACC;
+
+    text-color: #ECEFF4;
+
+    border-radius: 10px;
+
+    padding: 6px 10px;
+}
+
+element empty {
+    background-color: transparent;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+/***** ----- Icons ----- *****/
+
+element-icon {
+    size: 18px;
+    border: 0;
+}
+
+/***** ----- Text ----- *****/
+
+element-text {
+    vertical-align: 0.5;
+}
+
+textbox {
+    padding: 0px;
+    margin: 0px;
+}

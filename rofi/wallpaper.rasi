@@ -1,0 +1,96 @@
+@import "colors.rasi"
+
+* {
+    bg:             #10131acc;
+    bg-alt:         #1d2230dd;
+    fg:             #ECEFF4;
+    selected:       @primary;
+
+    border-colour:  @primary;
+
+    font: "JetBrainsMono Nerd Font Mono 11";
+}
+
+window {
+    transparency: "real";
+
+    location: center;
+    anchor: center;
+
+    width: 950px;
+
+    border: 1px;
+    border-color: @border-colour;
+    border-radius: 16px;
+
+    background-color: transparent;
+}
+
+mainbox {
+    spacing: 10px;
+    padding: 12px;
+
+    background-color: @bg;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+
+    border-radius: 10px;
+    padding: 10px;
+
+    background-color: @bg-alt;
+}
+
+prompt {
+    text-color: @selected;
+    background-color: transparent;
+}
+
+entry {
+    text-color: @fg;
+    background-color: transparent;
+}
+
+listview {
+    columns: 3;
+    lines: 1;
+
+    spacing: 12px;
+    cycle: true;
+    dynamic: true;
+
+    scrollbar: false;
+
+    background-color: transparent;
+}
+
+element {
+    orientation: vertical;
+
+    border-radius: 12px;
+    padding: 6px;
+
+    background-color: transparent;
+}
+
+element selected {
+    background-color: @primary;
+}
+
+element-icon {
+    size: 220px;
+    border-radius: 10px;
+
+    background-color: transparent;
+}
+
+element-text {
+    horizontal-align: 0.5;
+
+    text-color: @fg;
+
+    margin: 6px 0px 0px 0px;
+
+    background-color: transparent;
+}
